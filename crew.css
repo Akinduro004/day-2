@@ -1,0 +1,48 @@
+body{
+    background-image: url("images/crew/background-crew-desktop.jpg");
+  }
+  .technology-image img{
+    height: 100%;
+    width: 100%;
+  }
+  .technology-right h5{
+margin-top: 50px;
+  }
+
+@media(min-width: 768px) and (max-width:1024px){
+          .technology-image img{
+            height:300px;
+            width:200%;
+            margin-left: -40%;
+          }
+        }
+        @media(min-width: 425px) and (max-width:767px){
+            body{
+                padding-left: 20px;
+            }
+            .technology-image img{
+                margin-top: 70px;
+                margin-left: -10%;
+                margin-bottom: 20px;
+            }
+        }
+        @media(min-width:375px) and (max-width:424px){
+            body{
+                padding-left: 20px;
+            }
+            .technology-image img{
+                margin-top: 70px;
+                margin-left: -15%;
+                margin-bottom: 20px;
+            }
+        }
+        @media(min-width:320px) and (max-width:374px){
+            body{
+                padding-left: 20px;
+            }
+            .technology-image img{
+                margin-top: 70px;
+                margin-left: -15%;
+                margin-bottom: 20px;
+            }
+        }

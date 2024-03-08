@@ -6,10 +6,9 @@
     <title>Space tourism</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="destination.css">
+    <link rel="stylesheet" href="crew.css">
     <style>
-       
-       
+
     </style>
    <body onload="Show()">
    <div class="container-fluid">
@@ -41,61 +40,46 @@
         </div>
 
     </div>
-    <div class="row">
-        <div class="col-sm-4 ">
-            <div class="destination-page-right">
-                <p>01  PICK YOUR DESTINATION</p>
-                <img src="images/destination/image-mars.png">
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="destination-page-right-nav-2">
-                <ul class="flex">
-                    <li >
-                      <a class="text-light" href="#">MOON</a>
-                    </li>
-                    <li c>
-                      <a class="text-light" href href="destination.html">MARS </a>
-                    </li>
-                    <li >
-                      <a class="text-light" href href="#">EUROPA </a>
-                    </li>
-                    <li >
-                      <a class="text-light" href href="#">TITAN</a>
-                    </li>
-                  </ul>
-            </div>
-            <div class="mars">
-                <h1 class="text-light" id="mars"></h1>
-                <p class="text-light">Don't forget to pack your hiking boots. You'd need it to tackles the olympus Mons,
-                    the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!
-                </p>
-                <p class="text-light">______________________________</p>
-                <div class="flex text-light journey-info">
-                  <div class="">
-                    <p> AVG. DISTANCE </p>
-                    <p>225 MIL. KM</p>
-                  </div>
-                  <div>
-                    <p>EST. TRAVEL TIME</p>
-                    <P>9 MONTHS</P>
-                  </div>
-                </div>
-            </div>
-           
-            
 
+    <div class="row">
+        <div class="row below">
+            <div class="col-sm-6 text-light technology-right">
+                <p>02 MEET YOUR CREW</p>
+    <h5>FLIGHT ATTENDANT</h5>
+    <h1 id="crew-1"></h1>
+    <p> Anousneh Ansari is an American engineer and co-founder of Prodean Systems. Ansari was the fourth space funded space tourist
+        , the first self sunded woman to fly to the ISS, and the first Iranian in spain</p>
+      
+            </div>
+   
+            <div class="col-sm-3 offset-2 text-light">
+    <div class="technology-image">
+       <img src="images/crew/image-anousheh-ansari.webp">
+    </div>
+            </div>
         </div>
 
     </div>
-
    </div>
       
       
       
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="destination.js" ></script>
-
+    <script>
+        const name = "ANOUSHEH ANSARI";
+const nameContainer = document.getElementById("crew-1");
+nameContainer.style.fontSize="50px";
+       function Show() {
+        
+  let index = 0;
+  const interval = setInterval(() => {
+    nameContainer.textContent += name[index];
+    index++;
+    if (index === name.length) {
+      clearInterval(interval);
+    }
+  }, 150);}
+    </script>
 </body>
 </html>

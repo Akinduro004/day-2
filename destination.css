@@ -1,0 +1,93 @@
+body{
+    background-image: url("images/destination/background-destination-desktop.jpg");
+}
+.destination-page-right{ 
+    margin-top: 100px;
+    color: white;
+    margin-left: 30%;
+
+}
+.destination-page-right img{
+    width: 100%;
+    margin-top: 30px;
+}
+.flex{
+    display: flex;
+   
+}
+.destination-page-right-nav-2{
+    margin-top: 70px;
+}
+.mars{
+  text-align: left;
+}
+@media(min-width: 768px) and (max-width:1024px){
+.destination-page-right-nav-2{
+    margin-left: -40px;
+}
+
+}
+@media(min-width: 425px) and (max-width:767px){
+
+  .destination-page-right{
+        margin-left: 10%;
+      
+    }
+    .mars{
+    margin-left: 30px;
+   }
+   .destination-page-right-nav-2{
+    margin-top: 200px;
+   }
+   
+}
+@media(min-width:375px) and (max-width:424px){
+  .destination-page-right{
+        margin-left: 10%;
+      
+    }
+    .mars{
+    margin-left: 30px;
+   }
+   .destination-page-right-nav-2{
+    margin-top: 200px;
+   }
+}
+@media(min-width:320px) and (max-width:374px){
+  .destination-page-right{
+        margin-left: 10%;
+      
+    }
+    .mars{
+    margin-left: 30px;
+   }
+   .destination-page-right-nav-2{
+    margin-top: 200px;
+    margin-left: -20px;
+   }
+}
+@media (min-width:992px) {
+    .destination-page-right-nav-2{
+    margin-left: -440px;
+}  
+
+}
+@media (min-width:1024px) and (max-width:1440px) {
+.destination-page-right-nav-2{
+    margin-left: -300px;
+}
+ .mars {
+    margin-left: 200px;
+}
+.mars h1{
+    font-size: 60px;
+    text-align: center;
+}
+.mars p{
+    margin-left: 100px;
+}
+.journey-info{
+
+font-size: 15px;
+}
+}
