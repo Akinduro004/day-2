@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space tourism</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body{
+            background-image: url("images/destination/background-destination-desktop.jpg");
+        }
+        .destination-page-right{ 
+            margin-top: 100px;
+            color: white;
+            margin-left: 30%;
+
+        }
+        .destination-page-right img{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .flex{
+            display: flex;
+           
+        }
+        .destination-page-right-nav-2{
+            margin-top: 70px;
+        }
+
+        @media(min-width: 768px) and (max-width:1024px){
+        .destination-page-right-nav-2{
+            margin-left: -40px;
+        }
+        }
+        @media(min-width: 425px) and (max-width:767px){
+
+            .destination-page-right{
+                margin-left: 10%;
+              
+            }
+           .mars{
+            margin-left: 30px;
+           }
+           .destination-page-right-nav-2{
+            margin-top: 200px;
+           }
+           
+        }
+        @media(min-width:375px) and (max-width:424px){
+        
+        }
+        @media(min-width:320px) and (max-width:374px){
+        
+        }
+        @media (min-width:992px) {
+            .destination-page-right-nav-2{
+            margin-left: -440px;
+        }  
+
+        }
+        @media (min-width:1024px) and (max-width:1440px) {
+      .destination-page-right-nav-2{
+            margin-left: -300px;
+        }
+         .mars {
+            margin-left: 200px;
+        }
+        .mars h1{
+            font-size: 60px;
+            text-align: center;
+        }
+        .mars p{
+            margin-left: 100px;
+        }
+       
+        }
+       
+    </style>
+   
+   <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg">
+                <img class="logo" src="images/shared/logo.svg">
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse " id="navbarNav">
+                     <ul class="navbar-nav">
+                       <li class="nav-item active ">
+                         <a class="nav-link text-light" href="index.html">00 HOME</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link text-light" href="#">01 DESTINATION </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link text-light" href="#">02 CREW </a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link text-light" href="#">03 TECHNOLOGY</a>
+                       </li>
+                     </ul>
+                   </div>
+                 </nav>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-4 ">
+            <div class="destination-page-right">
+                <p>01  PICK YOUR DESTINATION</p>
+                <img src="images/destination/image-mars.webp">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="destination-page-right-nav-2">
+                <ul class="flex">
+                    <li >
+                      <a class="text-light" href="#">MOON</a>
+                    </li>
+                    <li c>
+                      <a class="text-light" href href="#">MARS </a>
+                    </li>
+                    <li >
+                      <a class="text-light" href href="#">EUROPA </a>
+                    </li>
+                    <li >
+                      <a class="text-light" href href="#">TITAN</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="mars">
+                <h1 class="text-light">MARS</h1>
+                <p class="text-light">Don't forget to pack your hiking boots. You'd need it to tackles the olympus Mons,
+                    the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!
+                </p>
+                
+            </div>
+           
+            
+
+        </div>
+
+    </div>
+
+   </div>
+      
+      
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

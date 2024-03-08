@@ -1,0 +1,101 @@
+body{
+    background-image: url("images/home/background-home-desktop.jpg");
+    font-family: Georgia;
+    padding-bottom: 10px;
+}
+ul{
+        text-align: right;
+   
+    }
+ a:hover{
+        border-bottom: 3px solid white;
+    
+    }
+ li{
+        margin-right: 20px;
+    }
+   
+.logo{
+    margin-left: 20px;
+}
+.bg{
+    background-color: rgb(128, 128, 128,0.2);
+    margin-top: 30px;
+    width: 100%;
+}
+
+.below{
+    margin-top: 150px;
+    padding-left: 40px;
+}
+
+.explore-logo{
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+    background-color: white;
+    padding-top: 70px;
+    padding-left: 30px;
+    margin-top: 100px;
+ 
+ 
+}
+
+.explore-logo-left-side{
+color: white;
+
+}
+.explore-logo-left-side h1{
+font-size: 100px;
+}
+.explore-logo-left-side h5{
+    font-size: 20px;
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+   ul{
+    margin-left:400px;
+   }
+}
+@media (min-width:1200px) {
+   ul{
+    margin-left:550px;
+   }
+}
+
+ @media(min-width: 768px) and (max-width:1024px){
+    .explore-logo-cover{
+    margin-bottom: 20px;
+  }
+ body{
+    padding-right: 50px;
+ }
+ }
+   @media(min-width: 425px) and (max-width:767px){
+    .below{
+        padding-left: 10px;
+    }
+    .explore-logo-cover{
+     padding-right: 100px;
+    margin-bottom: 20px;
+  }
+   }
+   @media(min-width:375px) and (max-width:424px){
+    .below{
+        padding-left: 10px;
+    }
+    .explore-logo-cover{
+    padding-right: 100px;
+    margin-bottom: 20px;
+  }
+   }
+   @media(min-width:320px) and (max-width:374px){
+   .below{
+        padding-left: 5px;
+    }
+  .explore-logo-cover{
+    padding-right: 70px;
+    margin-bottom: 20px;
+  }
+  }
+
