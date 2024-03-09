@@ -41,21 +41,97 @@
 
     </div>
 
+    <p class="text-light crew">02 MEET YOUR CREW</p>
+
+    <div id="carousel" class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           
+           <div class="row">
+            <div class="col-sm-6">
+                <div class="text-light employee-info">
+                    <h5>FLIGHT ATTENDANT</h5>
+                    <h1>ANOUSENEH ANSARI</h1>
+                    <p> Anousneh Ansari is an American engineer and co-founder of Prodean Systems. Ansari was the fourth space funded space tourist
+                        , the first self sunded woman to fly to the ISS, and the first Iranian in spain</p>
+                      
+                            </div>
+                  </div>
+                  <div class=" col-sm-6 employee-img">
+                    <img src="images/crew/image-anousheh-ansari.webp">
+                 </div>
+           </div>
+           
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="text-light employee-info">
+                        <h5>FLIGHT ENGINEER</h5>
+                        <h1>DOUGLAS HURLEY</h1>
+                        <p>Douglas HUrley is an American engineer.  He is incharge of making sure that the plane is operating properly and t0
+              communicate and fix it when it is not</p>
+                          
+                                </div>
+                      </div>
+                      <div class=" col-sm-6 employee-img">
+                        <img src="images/crew/image-douglas-hurley.webp">
+                     </div>
+               </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="text-light employee-info">
+                        <h5>PILOT</h5>
+                        <h1>MARK SHUTTLEWORT</h1>
+                        <p> Mark Shuttlewort is an aviator  who controls the flight
+                           of the aircraft by operating its directional flight controls</p>
+                          
+                                </div>
+                      </div>
+                      <div class=" col-sm-6 employee-img">
+                        <img src="images/crew/image-mark-shuttleworth.webp">
+                     </div>
+               </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="text-light employee-info">
+                        <h5>AEROSPACE ENGINEER</h5>
+                        <h1>VICTOR GLOVER</h1>
+                        <p> Victor Glover is an Aerospace engineers who is highly trained, and a  professional in his filed he is
+                           responsible for developing new aircraft and spacecraft technologies with his team.</p>
+                          
+                                </div>
+                      </div>
+                      <div class=" col-sm-6 employee-img">
+                        <img src="images/crew/image-victor-glover.webp">
+                     </div>
+               </div>
+          </div>
+        </div>
+        
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+
+
+
+
+
     <div class="row">
         <div class="row below">
-            <div class="col-sm-6 text-light technology-right">
-                <p>02 MEET YOUR CREW</p>
-    <h5>FLIGHT ATTENDANT</h5>
-    <h1>ANOUSENEH ANSARI</h1>
-    <p> Anousneh Ansari is an American engineer and co-founder of Prodean Systems. Ansari was the fourth space funded space tourist
-        , the first self sunded woman to fly to the ISS, and the first Iranian in spain</p>
       
-            </div>
    
             <div class="col-sm-3 offset-2 text-light">
-    <div class="technology-image">
-       <img src="images/crew/image-anousheh-ansari.webp">
-    </div>
+    
             </div>
         </div>
 
@@ -67,7 +143,25 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-       
+          const carousel = document.querySelector('.carousel');
+const carouselTrack = carousel.querySelector('.carousel-track');
+const carouselItems = carousel.querySelectorAll('.carousel-item');
+const dots = carousel.querySelectorAll('.dot');
+let currentIndex = 0;
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    goToSlide(index);
+  });
+});
+
+function goToSlide(index) {
+  carouselItems[currentIndex].classList.remove('active');
+  dots[currentIndex].classList.remove('active');
+  carouselItems[index].classList.add('active');
+  dots[index].classList.add('active');
+  currentIndex = index;
+}
     </script>
 </body>
 </html>
