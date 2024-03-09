@@ -10,7 +10,7 @@
     <style>
 
     </style>
-   <body onload="Show()">
+   <body onload="">
    <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
@@ -43,7 +43,7 @@
 
     <p class="text-light crew">02 MEET YOUR CREW</p>
 
-    <div id="carousel" class="carousel">
+    <div id="carousel" class="carousel" >
         <div class="carousel-inner">
           <div class="carousel-item active">
            
@@ -142,26 +142,6 @@
       
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-          const carousel = document.querySelector('.carousel');
-const carouselTrack = carousel.querySelector('.carousel-track');
-const carouselItems = carousel.querySelectorAll('.carousel-item');
-const dots = carousel.querySelectorAll('.dot');
-let currentIndex = 0;
-
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    goToSlide(index);
-  });
-});
-
-function goToSlide(index) {
-  carouselItems[currentIndex].classList.remove('active');
-  dots[currentIndex].classList.remove('active');
-  carouselItems[index].classList.add('active');
-  dots[index].classList.add('active');
-  currentIndex = index;
-}
-    </script>
+    <script src="crew.js"></script>
 </body>
 </html>
