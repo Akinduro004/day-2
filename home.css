@@ -51,7 +51,10 @@ font-size: 100px;
 .explore-logo-left-side h5{
     font-size: 20px;
 }
-
+.navbar-toggler{
+    background-color: white;
+    
+  }
 @media (min-width:992px) and (max-width:1199.98px){
    ul{
     margin-left:400px;
