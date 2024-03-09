@@ -82,6 +82,9 @@ font-size: 100px;
      padding-right: 100px;
     margin-bottom: 20px;
   }
+  .explore-logo h1{
+    margin-right: 30px;
+  }
    }
    @media(min-width:375px) and (max-width:424px){
     .below{
@@ -90,6 +93,9 @@ font-size: 100px;
     .explore-logo-cover{
     padding-right: 100px;
     margin-bottom: 20px;
+  }
+  .explore-logo h1{
+    margin-right: 30px;
   }
    }
    @media(min-width:320px) and (max-width:374px){
@@ -100,5 +106,13 @@ font-size: 100px;
     padding-right: 70px;
     margin-bottom: 20px;
   }
+  .explore-logo h1{
+    margin-right: 30px;
+  }
+  }
+  @media (max-width:767px){
+body{
+    text-align: center;
+}
   }
 
