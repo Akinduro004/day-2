@@ -38,4 +38,4 @@ var carousell = document.getElementById('carousel');
     showSlide(currentSlide);
   }
 
-  setInterval(nextSlide, 1500);
+  setInterval(nextSlide, 3000);
